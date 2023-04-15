@@ -20,7 +20,11 @@ const userSchema = new mongoose.Schema({
   password: {
     type: String,
   },
-  
+  role:{
+    type:String,
+    enum:["Admin","Client"],
+    default:"Client"
+  },
 
 }, {
   timestamps: true

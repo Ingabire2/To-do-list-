@@ -9,7 +9,7 @@ import verifyAccess from '../middlewares/verifyAccess';
 const route = Router();
 route
 .route("/")
-.post(checkUser,userController.signup)
+.post(checkUser,verifyAccess("Admin"),userController.signup)
 .get(userController.getAllUsers);
 
 

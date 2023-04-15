@@ -13,6 +13,9 @@ const toDoItemsSchema = new mongoose.Schema({
     description:{
         type:String
     },
+    dueDate:{
+        type:String
+    },
     
   
 }, {
