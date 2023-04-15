@@ -1,0 +1,37 @@
+{
+  "name": "to-do-lists-quiz-test",
+  "version": "1.0.0",
+  "description": "Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev-server": "nodemon --exec babel-node ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ingabire2/To-do-list-.git"
+  },
+  "keywords": [
+    "Ingabire"
+  ],
+  "author": "Ingabire",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ingabire2/To-do-list-/issues"
+  },
+  "homepage": "https://github.com/Ingabire2/To-do-list-#readme",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-node": "^0.0.1-security",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "http-status": "^1.6.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.3",
+    "nodemon": "^2.0.22"
+  }
+}
