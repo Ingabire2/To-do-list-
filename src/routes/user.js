@@ -9,13 +9,13 @@ import verifyAccess from '../middlewares/verifyAccess';
 const route = Router();
 route
 .route("/")
-.post(checkUser,verifyAccess("Admin"),userController.signup)
+.post(checkUser,userController.signup)
 .get(userController.getAllUsers);
 
 
 route.post("/login",loginUser);
 route.use(verifyUserToken);
-
+route.use(verifyAccess("Admin"));
 route
 .route("/:id")
 .get(userController.getOneUser)
